@@ -4,8 +4,11 @@
 downloads:
   - url: "https://storage.googleapis.com/monarch-ingest/manually-uploaded-data/xb_xpo_spo_v_v1.tab"
     local_name: "data/xb_xpo_spo_v_v1.tab"
-
-# Example entry:
-# downloads:
-#   - url: "https://example.org/data.tsv"
-#     local_name: "data/example.tsv"
+  - url: "https://download.xenbase.org/xenbase/GenePageReports/XenbaseGeneHumanOrthologMapping.txt"
+    local_name: "data/XenbaseGeneHumanOrthologMapping.txt"
+  - url: "https://download.xenbase.org/xenbase/GenePageReports/XenbaseGeneMouseOrthologMapping.txt"
+    local_name: "data/XenbaseGeneMouseOrthologMapping.txt"
+  - url: "https://download.xenbase.org/xenbase/GenePageReports/XenbaseGeneZebrafishOrthologMapping.txt"
+    local_name: "data/XenbaseGeneZebrafishOrthologMapping.txt"
+  - url: "https://download.xenbase.org/xenbase/GenePageReports/XenbaseGenepageToGeneIdMapping.txt"
+    local_name: "data/XenbaseGenepageToGeneIdMapping.txt"

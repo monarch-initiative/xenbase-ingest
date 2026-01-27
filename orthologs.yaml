@@ -1,0 +1,31 @@
+name: 'xenbase_orthologs'
+
+reader:
+  files:
+    - 'data/XenbaseGeneHumanOrthologMapping.txt'
+    - 'data/XenbaseGeneMouseOrthologMapping.txt'
+    - 'data/XenbaseGeneZebrafishOrthologMapping.txt'
+  format: 'csv'
+  delimiter: '\t'
+  header_mode: 'none'
+  columns:
+    - 'entrez_id'
+    - 'xb_genepage_id'
+    - 'xb_gene_symbol'
+    - 'xb_gene_name'
+
+transform:
+  mappings:
+    - 'genepage-2-gene.yaml'
+
+writer:
+  edge_properties:
+    - 'id'
+    - 'category'
+    - 'subject'
+    - 'predicate'
+    - 'object'
+    - 'aggregator_knowledge_source'
+    - 'primary_knowledge_source'
+    - 'knowledge_level'
+    - 'agent_type'
