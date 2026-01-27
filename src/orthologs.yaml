@@ -2,9 +2,9 @@ name: 'xenbase_orthologs'
 
 reader:
   files:
-    - 'data/XenbaseGeneHumanOrthologMapping.txt'
-    - 'data/XenbaseGeneMouseOrthologMapping.txt'
-    - 'data/XenbaseGeneZebrafishOrthologMapping.txt'
+    - '../data/XenbaseGeneHumanOrthologMapping.txt'
+    - '../data/XenbaseGeneMouseOrthologMapping.txt'
+    - '../data/XenbaseGeneZebrafishOrthologMapping.txt'
   format: 'csv'
   delimiter: '\t'
   header_mode: 'none'

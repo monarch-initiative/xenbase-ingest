@@ -27,7 +27,7 @@ dev = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/xenbase_ingest"]
+packages = ["src"]
 
 [tool.hatch.version]
 source = "uv-dynamic-versioning"
@@ -39,7 +39,7 @@ fallback-version = "0.0.0"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-pythonpath = ["."]
+pythonpath = ["src"]
 
 [tool.ruff]
 line-length = 120

@@ -2,7 +2,7 @@ name: 'xenbase_gene_to_phenotype'
 
 reader:
   files:
-    - 'data/xb_xpo_spo_v_v1.tab'
+    - '../data/xb_xpo_spo_v_v1.tab'
   format: 'csv'
   delimiter: '\t'
   header_mode: 0

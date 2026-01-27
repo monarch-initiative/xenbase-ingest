@@ -6,7 +6,7 @@ metadata:
 reader:
   format: 'csv'
   files:
-    - 'data/XenbaseGenepageToGeneIdMapping.txt'
+    - '../data/XenbaseGenepageToGeneIdMapping.txt'
   delimiter: '\t'
   header_mode: 'none'
   columns:

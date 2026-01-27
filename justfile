@@ -1,5 +1,8 @@
 # xenbase-ingest justfile
 
+# Package directory
+PKG := "src"
+
 # Explicitly enumerate transforms (add new ingests here)
 TRANSFORMS := "gene_to_phenotype orthologs non_entrez_orthologs"
 
@@ -30,14 +33,14 @@ transform-all:
     for t in {{TRANSFORMS}}; do
         if [ -n "$t" ]; then
             echo "Transforming $t..."
-            uv run koza transform $t.yaml
+            uv run koza transform {{PKG}}/$t.yaml
         fi
     done
 
 # Run specific transform
 [group('ingest')]
 transform NAME:
-    uv run koza transform {{NAME}}.yaml
+    uv run koza transform {{PKG}}/{{NAME}}.yaml
 
 # Run tests
 [group('development')]
