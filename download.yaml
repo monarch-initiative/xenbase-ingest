@@ -1,7 +1,9 @@
 # Download configuration for {{project_name}}
 # Add entries for each data source
 
-downloads: []
+downloads:
+  - url: "https://storage.googleapis.com/monarch-ingest/manually-uploaded-data/xb_xpo_spo_v_v1.tab"
+    local_name: "data/xb_xpo_spo_v_v1.tab"
 
 # Example entry:
 # downloads:
