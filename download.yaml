@@ -12,3 +12,5 @@ downloads:
     local_name: "data/XenbaseGeneZebrafishOrthologMapping.txt"
   - url: "https://download.xenbase.org/xenbase/GenePageReports/XenbaseGenepageToGeneIdMapping.txt"
     local_name: "data/XenbaseGenepageToGeneIdMapping.txt"
+  - url: "https://download.xenbase.org/xenbase/GenePageReports/XenbaseGeneNonEntrezOrthologMapping.txt"
+    local_name: "data/XenbaseGeneNonEntrezOrthologMapping.txt"

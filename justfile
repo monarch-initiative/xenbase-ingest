@@ -1,7 +1,7 @@
 # xenbase-ingest justfile
 
 # Explicitly enumerate transforms (add new ingests here)
-TRANSFORMS := "gene_to_phenotype orthologs"
+TRANSFORMS := "gene_to_phenotype orthologs non_entrez_orthologs"
 
 # List all commands
 _default:

@@ -1,0 +1,25 @@
+name: 'xenbase_non_entrez_orthologs'
+
+reader:
+  files:
+    - 'data/XenbaseGeneNonEntrezOrthologMapping.txt'
+  format: 'csv'
+  delimiter: '\t'
+  columns:
+    - 'Xenbase'
+    - 'OMIM'
+    - 'MGI'
+    - 'ZFIN'
+    - 'GEISHA'  # spurious empty column header... ignored
+
+writer:
+  edge_properties:
+    - 'id'
+    - 'category'
+    - 'subject'
+    - 'predicate'
+    - 'object'
+    - 'aggregator_knowledge_source'
+    - 'primary_knowledge_source'
+    - 'knowledge_level'
+    - 'agent_type'
