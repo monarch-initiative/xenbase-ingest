@@ -1,4 +1,4 @@
-# xenbase-ingest
+# Koza Ingest
 
 This is a Koza ingest repository for transforming biological/biomedical data into Biolink model format.
 
@@ -7,6 +7,8 @@ This is a Koza ingest repository for transforming biological/biomedical data int
 - `download.yaml` - Configuration for downloading source data
 - `src/` - Transform code and configuration
   - `*.py` / `*.yaml` pairs - Transform code and koza config for each ingest
+  - `*_mapping.yaml` - Lookup mapping files (if needed)
+- `scripts/` - Utility scripts (download, preprocessing)
 - `tests/` - Unit tests for transforms
 - `output/` - Generated nodes and edges (gitignored)
 - `data/` - Downloaded source data (gitignored)
