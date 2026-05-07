@@ -1,16 +1,21 @@
-# Download configuration for {{project_name}}
-# Add entries for each data source
+---
+# Download configuration consumed by `kghub-downloader`.
+# https://github.com/monarch-initiative/kghub-downloader
 
-downloads:
-  - url: "https://storage.googleapis.com/monarch-ingest/manually-uploaded-data/xb_xpo_spo_v_v1.tab"
-    local_name: "data/xb_xpo_spo_v_v1.tab"
-  - url: "https://download.xenbase.org/xenbase/GenePageReports/XenbaseGeneHumanOrthologMapping.txt"
-    local_name: "data/XenbaseGeneHumanOrthologMapping.txt"
-  - url: "https://download.xenbase.org/xenbase/GenePageReports/XenbaseGeneMouseOrthologMapping.txt"
-    local_name: "data/XenbaseGeneMouseOrthologMapping.txt"
-  - url: "https://download.xenbase.org/xenbase/GenePageReports/XenbaseGeneZebrafishOrthologMapping.txt"
-    local_name: "data/XenbaseGeneZebrafishOrthologMapping.txt"
-  - url: "https://download.xenbase.org/xenbase/GenePageReports/XenbaseGenepageToGeneIdMapping.txt"
-    local_name: "data/XenbaseGenepageToGeneIdMapping.txt"
-  - url: "https://download.xenbase.org/xenbase/GenePageReports/XenbaseGeneNonEntrezOrthologMapping.txt"
-    local_name: "data/XenbaseGeneNonEntrezOrthologMapping.txt"
+- url: https://storage.googleapis.com/monarch-ingest/manually-uploaded-data/xb_xpo_spo_v_v1.tab
+  local_name: data/xb_xpo_spo_v_v1.tab
+
+- url: https://download.xenbase.org/xenbase/GenePageReports/XenbaseGeneHumanOrthologMapping.txt
+  local_name: data/XenbaseGeneHumanOrthologMapping.txt
+
+- url: https://download.xenbase.org/xenbase/GenePageReports/XenbaseGeneMouseOrthologMapping.txt
+  local_name: data/XenbaseGeneMouseOrthologMapping.txt
+
+- url: https://download.xenbase.org/xenbase/GenePageReports/XenbaseGeneZebrafishOrthologMapping.txt
+  local_name: data/XenbaseGeneZebrafishOrthologMapping.txt
+
+- url: https://download.xenbase.org/xenbase/GenePageReports/XenbaseGenepageToGeneIdMapping.txt
+  local_name: data/XenbaseGenepageToGeneIdMapping.txt
+
+- url: https://download.xenbase.org/xenbase/GenePageReports/XenbaseGeneNonEntrezOrthologMapping.txt
+  local_name: data/XenbaseGeneNonEntrezOrthologMapping.txt
