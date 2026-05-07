@@ -20,12 +20,10 @@ setup: _git-init install _git-add
 install:
     uv sync --group dev
 
-# Download source data (uses scripts/download.py because the existing
-# download.yaml uses a `downloads:` wrapper format that kghub-downloader
-# can't parse).
+# Download source data
 [group('ingest')]
 download: install
-    uv run python scripts/download.py
+    uv run downloader download.yaml
 
 # Run all transforms
 [group('ingest')]
