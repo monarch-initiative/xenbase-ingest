@@ -1,4 +1,3 @@
-import uuid
 import koza
 from biolink_model.datamodel.pydanticmodel_v2 import (
     Gene,
@@ -22,7 +21,6 @@ def transform_record(koza_transform, row):
 
     # relation = row["RELATION"].replace("_", ":"),
     association = GeneToPhenotypicFeatureAssociation(
-        id="uuid:" + str(uuid.uuid1()),
         subject=gene.id,
         predicate="biolink:has_phenotype",
         object=phenotype.id,
