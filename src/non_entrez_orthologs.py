@@ -2,7 +2,6 @@
 Ingest of Reference Genome Orthologs from Xenbase
 """
 
-import uuid
 import koza
 from biolink_model.datamodel.pydanticmodel_v2 import GeneToGeneHomologyAssociation, AgentTypeEnum, KnowledgeLevelEnum
 from loguru import logger
@@ -23,7 +22,6 @@ def transform_record(koza_transform, row):
         # Instantiate the instance of Gene-to-Gene Homology Associations for each ortholog
         if omim_id:
             association = GeneToGeneHomologyAssociation(
-                id=f"uuid:{str(uuid.uuid1())}",
                 subject=f"Xenbase:{gene_id}",
                 predicate=predicate,
                 object=f"OMIM:{omim_id}",
@@ -36,7 +34,6 @@ def transform_record(koza_transform, row):
 
         if mgi_id:
             association = GeneToGeneHomologyAssociation(
-                id=f"uuid:{str(uuid.uuid1())}",
                 subject=f"Xenbase:{gene_id}",
                 predicate=predicate,
                 object=f"MGI:{mgi_id}",
@@ -49,7 +46,6 @@ def transform_record(koza_transform, row):
 
         if zfin_id:
             association = GeneToGeneHomologyAssociation(
-                id=f"uuid:{str(uuid.uuid1())}",
                 subject=f"Xenbase:{gene_id}",
                 predicate=predicate,
                 object=f"ZFIN:{zfin_id}",
